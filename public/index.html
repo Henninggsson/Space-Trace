@@ -1,0 +1,84 @@
+ <!doctype html>
+<title>Space Trace</title>
+<style>
+img {
+           border-radius: 10%;    
+        }
+       #p1 {
+           color: rgb(188, 0, 0);
+           font-weight: bold;
+           font-style: italic;
+           font-size: medium;
+       }
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "nav article ads"
+    "nav footer footer";
+  grid-template-rows: 80px 1fr 70px;  
+  grid-template-columns: 20% 1fr 15%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 50vh;
+  margin: 0;
+  font-weight: bold;
+  color: rgb(113, 44, 148);
+  }  
+header, footer, article, nav, div {
+  padding: 1.2em;
+  background: rgb(16, 255, 179);
+  }
+#pageHeader {
+  grid-area: header;
+  }
+#pageFooter {
+  grid-area: footer;
+  }
+#mainArticle { 
+  grid-area: article;      
+  }
+#mainNav { 
+  grid-area: nav; 
+  }
+#siteAds { 
+  grid-area: ads; 
+  } 
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+  body { 
+    grid-template-areas: 
+      "header"
+      "article"
+      "ads"
+      "nav"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;  
+    grid-template-columns: 1fr;
+ }
+}
+</style>
+<body>
+  <header id="pageHeader">
+    <p id="p1">SPACE TRACE ✴︎ share your browsing trail with your favorite people</p>
+  </header>
+  <article id="mainArticle">
+    <p>URL & Website Preview</p>
+    <img src="planet.jpg" alt="Planet Image">
+  </article>
+  <div id="mainNav">
+    <ul>
+Your browsing history (connected to WebCrate):
+    
+    <li>Trace 1 (url)</li>
+    <li>Trace 2 (url)</li>
+    <li>Trace 3 (url)</li>
+    <li>Trace 4 (url)</li>
+    <li>Trace 5 (url)</li>
+</ul>
+  </div>
+  <div id="siteAds">Visitor Comments
+  </div>
+  <footer id="pageFooter">Author Section: notes, questions, explanations, etc.
+  </footer>
+  <!DOCTYPE html>

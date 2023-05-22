@@ -1,0 +1,9 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+icon: ./logo.png
+micros:
+  - name: Microone
+    engine: static
+    src: .
+    serve: public
+    public: true
