@@ -2,7 +2,7 @@
 <title>Space Trace</title>
 <style>
 img {
-           border-radius: 10%;    
+           border-radius: 5%;    
         }
        #p1 {
            color: rgb(188, 0, 0);
@@ -16,7 +16,7 @@ body {
     "header header header"
     "nav article ads"
     "nav footer footer";
-  grid-template-rows: 80px 1fr 70px;  
+  grid-template-rows: 83px 1fr 70px;  
   grid-template-columns: 20% 1fr 15%;
   grid-row-gap: 10px;
   grid-column-gap: 10px;
@@ -60,23 +60,79 @@ header, footer, article, nav, div {
 </style>
 <body>
   <header id="pageHeader">
-    <p id="p1">SPACE TRACE ✴︎ share your browsing trail with your favorite people</p>
+    <p id="p1">SPACE TRACE ✴︎ Don't Surf Alone✴︎
+    </p>
   </header>
   <article id="mainArticle">
-    <p>URL & Website Preview</p>
-    <img src="planet.jpg" alt="Planet Image">
+    <p>https://www.theverge.com/2023/6/8/23754239/mark-zuckerberg-meta-apple-vision-pro-headset</p>
+    <img src="zuckbro.jpg" alt="zuckbro Image">
   </article>
   <div id="mainNav">
     <ul>
-Your browsing history (connected to WebCrate):
-    
-    <li>Trace 1 (url)</li>
-    <li>Trace 2 (url)</li>
-    <li>Trace 3 (url)</li>
+      <p>Collections Access Key:</p>
+      <p>:____________________ [OK]</p>
+      <p>////////////////////////////////////////////</p>
+      <p>New Trace:</p>
+      <p>:____________________ [OK]</p>
+      <p>////////////////////////////////////////////</p>
+      <p></p>
+      ✴︎CoolBoy's Club✴︎
+      <p>--Filtered by User--</p>
+      <p> 
+      Henninggsson's trace:
+      </p>
+    <li>Zuck seems jealous? ✎</li>
+    <li>What the heck is that? ✎</li>
+    <li>Beureucracy man... ✎</li>
+    <li>I didn't know this! ✎</li>
+    <p>
+Xeust's trace:
+    </p>
+    <li>Awesome article I read last night</li>
+    <li>Not a bad kickflip</li>
+    <p>
+Aavash's trace      
+    </p>
+    <li>This song hit hard</li>
+    <li>Man United 4-ever</li>
 </ul>
   </div>
-  <div id="siteAds">Visitor Comments
+  <div id="siteAds">
+    <form>
+      <label for="name">User:</label><br>
+      <input type="text" id="name" name="name"><br><br>
+      <label for="comment">Comment:</label><br>
+      <textarea id="comment" name="comment" rows="4" cols="20"></textarea><br><br>
+      <button onclick="addComment()">Submit</button>
+    </form>
+  
+    <script>
+      function addComment() {
+        // Get the values from the form
+        var name = document.getElementById("name").value;
+        var comment = document.getElementById("comment").value;
+  
+        // Create a new comment element
+        var newComment = document.createElement("div");
+        newComment.innerHTML = "<strong>" + name + ":</strong> " + comment;
+  
+        // Add the comment element to the comments section
+        document.getElementById("comments").appendChild(newComment);
+  
+        // Clear the form values
+        document.getElementById("name").value = "";
+        document.getElementById("comment").value = "";
+      }
+    </script>
+  
+  </body>
+  </html>
   </div>
-  <footer id="pageFooter">Author Section: notes, questions, explanations, etc.
+  <footer id="pageFooter">Henninggsson: Oh man, seems zuck still prefers Oculus?
+    <div id="comments">
+      <!-- The comments will be displayed here -->
+    </div>
   </footer>
   <!DOCTYPE html>
+
+
